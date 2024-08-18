@@ -8,12 +8,12 @@ const host = '0.0.0.0';
 const app = express();
 
 app.use(cors());
-
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "sensor_db"
+    host: "ide.h.filess.io",
+    user: "chicken_mightwagon",
+    password: "62a2fb2b1d802aec52e615eafd201ca22bc6f23b",
+    database: "chicken_mightwagon",
+    port: "3305"
 });
 db.on('error', (err) => {
     console.log('Database connection failed \n' + err);
